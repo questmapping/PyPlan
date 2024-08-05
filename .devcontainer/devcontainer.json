@@ -1,0 +1,20 @@
+{
+    "name": "Pyplan IDE Dev Container",
+    "dockerFile": "Dockerfile",
+    "forwardPorts": [9740],
+    "remoteUser": "root",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.vscode-pylance",
+                "ms-python.python",
+                "ms-python.debugpy",
+                "cweijan.vscode-office"
+            ],
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            }
+        }
+    },
+    "postCreateCommand": "pyplan"
+}
